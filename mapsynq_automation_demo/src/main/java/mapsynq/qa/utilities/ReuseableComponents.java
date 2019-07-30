@@ -33,12 +33,14 @@ public class ReuseableComponents extends BaseClass {
 		logger.log(LogStatus.PASS, desc);
 	}
 	
-	public static void getTextValue(WebElement element, String desc)
+	public static String getTextValue(WebElement element, String desc)
 	{
 		String Value;
 		Value = element.getText();
 		System.out.println(Value);
 		logger.log(LogStatus.PASS, desc);
+		return Value;
+		
 	}
 	
 	public static void getAttributeValue(WebElement element, String name, String desc)

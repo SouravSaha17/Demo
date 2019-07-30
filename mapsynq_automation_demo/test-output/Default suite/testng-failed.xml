@@ -6,11 +6,14 @@
       <class name="mapsynq_automation.DemoTest">
         <methods>
           <include name="initilasation"/>
+          <include name="close"/>
+          <include name="ClickandValidateIncident"/>
         </methods>
       </class> <!-- mapsynq_automation.DemoTest -->
       <class name="mapsynq_automation.LandingPage">
         <methods>
           <include name="GetElementAndValidate"/>
+          <include name="close"/>
           <include name="initilasation"/>
         </methods>
       </class> <!-- mapsynq_automation.LandingPage -->

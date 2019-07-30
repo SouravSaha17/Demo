@@ -1,11 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1490" started-at="2019-07-30T12:44:57Z" finished-at="2019-07-30T12:44:58Z">
+  <suite name="Suite" duration-ms="141" started-at="2019-07-30T22:52:59Z" finished-at="2019-07-30T22:52:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1490" started-at="2019-07-30T12:44:57Z" finished-at="2019-07-30T12:44:58Z">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test name="Test" duration-ms="141" started-at="2019-07-30T22:52:59Z" finished-at="2019-07-30T22:52:59Z">
+      <class name="mapsynq_automation.LandingPage">
+        <test-method status="FAIL" signature="initilasation()[pri:0, instance:mapsynq_automation.LandingPage@3e6fa38a]" name="initilasation" is-config="true" duration-ms="0" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at mapsynq_automation.LandingPage.initilasation(LandingPage.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilasation -->
+        <test-method status="SKIP" signature="GetElementAndValidate()[pri:0, instance:mapsynq_automation.LandingPage@3e6fa38a]" name="GetElementAndValidate" duration-ms="3" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetElementAndValidate -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:mapsynq_automation.LandingPage@3e6fa38a]" name="close" is-config="true" duration-ms="0" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- mapsynq_automation.LandingPage -->
+      <class name="mapsynq_automation.DemoTest">
+        <test-method status="FAIL" signature="initilasation()[pri:0, instance:mapsynq_automation.DemoTest@6d4b1c02]" name="initilasation" is-config="true" duration-ms="0" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at mapsynq_automation.DemoTest.initilasation(DemoTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilasation -->
+        <test-method status="SKIP" signature="ClickandValidateIncident()[pri:0, instance:mapsynq_automation.DemoTest@6d4b1c02]" name="ClickandValidateIncident" duration-ms="22" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickandValidateIncident -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:mapsynq_automation.DemoTest@6d4b1c02]" name="close" is-config="true" duration-ms="0" started-at="2019-07-31T04:22:59Z" finished-at="2019-07-31T04:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- mapsynq_automation.DemoTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-
-<listeners>
-<listener class-name="mapsynq.qa.listners.TestListners"></listener>
-</listeners>
-
-  <test name="Test"> 
+<suite name="Suite" parallel="classes">
+  <test thread-count="2" name="Test" >
     <classes>
       <class name="mapsynq_automation.DemoTest"/>
       <class name="mapsynq_automation.LandingPage"/>

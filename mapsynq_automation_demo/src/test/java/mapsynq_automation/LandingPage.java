@@ -28,7 +28,8 @@ public class LandingPage extends BaseClass {
 	
 	@BeforeMethod
 	public void initilasation() {
-		startTest("MapsynqLandingPage");
+		//startTest("MapsynqLandingPage");
+		logger = report.startTest("MapsynqLandingPage");
 		init();
 		
 		mapLanding = new MapsynqLandingPage();		
@@ -37,7 +38,7 @@ public class LandingPage extends BaseClass {
 	@Test
 	public void GetElementAndValidate()
 	{
-		ReuseableComponents.wait(thread, 1);
+		//ReuseableComponents.wait(thread, 1);
 		hideAdd();
 		mapLanding.getElement();
 	}
@@ -46,7 +47,8 @@ public class LandingPage extends BaseClass {
 	public void close()
 	{
 		dr.quit();
-		endReport();
+		report.endTest(logger);
+		//endReport();
 	}
 	
 //	@AfterTest

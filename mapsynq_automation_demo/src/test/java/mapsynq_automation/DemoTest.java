@@ -1,8 +1,10 @@
 package mapsynq_automation;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -25,11 +27,18 @@ public class DemoTest extends BaseClass {
 //		startTest("MapsynqLiveIncidents");
 //	}
 
+	
+//	@BeforeSuite
+//	public void set()
+//	{
+//		startTest("test");
+//	}
 
 	@BeforeMethod
 	public void initilasation() 
 	{
-		startTest("MapsynqLiveIncidents");
+		//startTest("MapsynqLiveIncidents");
+		logger = report.startTest("MapsynqLiveIncidents");
 		init();		
 		mapLive=new MapsynqLiveIncidents();
 	}
@@ -49,10 +58,11 @@ public class DemoTest extends BaseClass {
 	public void close()
 	{
 		dr.quit();
-		endReport();
+		report.endTest(logger);
+		//endReport();
 	}
 	
-//	@AfterTest
+//	@AfterSuite
 //	public void end() 
 //	{
 //		endReport();

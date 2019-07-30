@@ -57,7 +57,13 @@ public class BaseClass {
 		String timestamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
 
 		report = new ExtentReports(System.getProperty("user.dir")+ "\\src\\test\\resources\\Reports\\" +name+timestamp+ ".html");
-		logger = report.startTest(name);
+		//logger = report.startTest(name);
+		
+	}
+	public static void endReport()
+	{
+		//report.endTest(logger);
+		report.flush();
 	}
 
 	public static void init()
@@ -114,10 +120,6 @@ public class BaseClass {
 		
 	}
 	
-	public static void endReport()
-	{
-		report.endTest(logger);
-		report.flush();
-	}
+	
 
 }

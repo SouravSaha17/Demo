@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.google.common.base.Verify;
+
+import junit.framework.Assert;
 import mapsynq.qa.testbase.BaseClass;
 import mapsynq.qa.utilities.ReuseableComponents;
 
@@ -35,14 +38,15 @@ public class MapsynqLiveIncidents extends BaseClass {
 	
 	public void clickIncident()
 	{	
+		ReuseableComponents obj = new ReuseableComponents();
 		//ReuseableComponents.waitForElement(dr,incident_btn,10);
 		//logs.info("Entered user name=" +name);
 		//ReuseableComponents.clearElementandEnterText(dr, userName, name);
 		ReuseableComponents.clickElement(incident_btn, "Click incident button");
 		ReuseableComponents.clickElement(incident, "Click incident");
-		ReuseableComponents.getTextValue(incident_value, "Get incident text value");
-		ReuseableComponents.getTextValue(incident_value_map, "Get incident text value from map");
-		
+		String expectedvalue = ReuseableComponents.getTextValue(incident_value, "Get incident text value");		
+		String actualvalue = ReuseableComponents.getTextValue(incident_value_map, "Get incident text value from map");
+		Assert.assertEquals(expectedvalue, actualvalue);
 	}
 	
 //	public void hideAdd()
