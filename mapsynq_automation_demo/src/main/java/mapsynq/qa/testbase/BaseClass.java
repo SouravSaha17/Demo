@@ -22,7 +22,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass {
 
-	static Properties prop;
+	public static Properties prop;
 	public static WebDriver dr;
 	public static ExtentReports report;
 	public static ExtentTest logger;
@@ -114,7 +114,7 @@ public class BaseClass {
 
 		catch(Exception e)
 		{
-
+			logger.log(LogStatus.FAIL, "Open Browser and Enter URL");
 		}
 		
 		

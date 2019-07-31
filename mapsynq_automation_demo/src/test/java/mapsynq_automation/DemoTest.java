@@ -34,13 +34,21 @@ public class DemoTest extends BaseClass {
 //		startTest("test");
 //	}
 
+//	@BeforeMethod
+//	public void initilasation() 
+//	{
+//		//startTest("MapsynqLiveIncidents");
+//		logger = report.startTest("MapsynqLiveIncidents");
+//		init();		
+//		mapLive=new MapsynqLiveIncidents();
+//	}
 	@BeforeMethod
-	public void initilasation() 
+	public void initialastion()
 	{
-		//startTest("MapsynqLiveIncidents");
-		logger = report.startTest("MapsynqLiveIncidents");
-		init();		
-		mapLive=new MapsynqLiveIncidents();
+		startTest("MapsynqLiveIncidents");
+		//logger = report.startTest("MapsynqLiveIncidents");
+		init();
+		mapLive = new MapsynqLiveIncidents();
 	}
 
 
@@ -59,7 +67,7 @@ public class DemoTest extends BaseClass {
 	{
 		dr.quit();
 		report.endTest(logger);
-		//endReport();
+		endReport();
 	}
 	
 //	@AfterSuite

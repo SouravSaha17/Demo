@@ -3,13 +3,14 @@
 <suite name="Suite">
 
 <listeners>
-<listener class-name="mapsynq.qa.listners.TestListners"></listener>
+<listener class-name="mapsynq.qa.listeners.TestITlisteners"></listener>
 </listeners>
 
   <test name="Test"> 
     <classes>
       <class name="mapsynq_automation.DemoTest"/>
       <class name="mapsynq_automation.LandingPage"/>
+      <class name="mapsynq_automation.RegisterForm"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

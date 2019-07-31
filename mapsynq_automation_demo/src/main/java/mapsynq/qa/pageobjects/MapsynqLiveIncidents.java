@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.google.common.base.Verify;
 
-import junit.framework.Assert;
+
 import mapsynq.qa.testbase.BaseClass;
 import mapsynq.qa.utilities.ReuseableComponents;
 
@@ -38,7 +39,7 @@ public class MapsynqLiveIncidents extends BaseClass {
 	
 	public void clickIncident()
 	{	
-		ReuseableComponents obj = new ReuseableComponents();
+		
 		//ReuseableComponents.waitForElement(dr,incident_btn,10);
 		//logs.info("Entered user name=" +name);
 		//ReuseableComponents.clearElementandEnterText(dr, userName, name);

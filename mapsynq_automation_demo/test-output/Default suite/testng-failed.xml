@@ -3,20 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mapsynq_automation.DemoTest">
+      <class name="mapsynq_automation.RegisterForm">
         <methods>
-          <include name="initilasation"/>
-          <include name="close"/>
-          <include name="ClickandValidateIncident"/>
-        </methods>
-      </class> <!-- mapsynq_automation.DemoTest -->
-      <class name="mapsynq_automation.LandingPage">
-        <methods>
-          <include name="GetElementAndValidate"/>
-          <include name="close"/>
+          <include name="CreateNewProfile"/>
           <include name="initilasation"/>
         </methods>
-      </class> <!-- mapsynq_automation.LandingPage -->
+      </class> <!-- mapsynq_automation.RegisterForm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
